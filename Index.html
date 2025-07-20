@@ -9,11 +9,10 @@
 </head>
 
 <body>
-    <header>
-        <img id="companyLogo" src="assets/company logo.png" width="170px" height="180px" />
-    </header>
+
     <div class="container">
         <div class="sidebar">
+            <img id="companyLogo" src="assets/company logo.png" width="170px" height="180px" />
             <h3>Menu</h3>
             <ul>
                 <li><img src="assets/dashboard.webp" width="28px" height="25px"> Dashboard</li>
@@ -43,6 +42,107 @@
 
         </div>
         <main class="main-content">
+            <header>
+                <h3>Dashboard</h3>
+
+            </header>
+
+            <div id="content">
+
+
+                <div id="cloud">
+
+                    <h3>☁️ Cloud Infrastructure</h3>
+                    <p>Monitoring cloud services, storage, and support infrastructure.</p>
+
+                    <canvas id="cloudChart" width="600" height="400"></canvas>
+
+                    <ul class="cloud-indicators">
+                        <li>☁️Network Status: <span class="status green">🟢 Online</span></li>
+                        <li>💾 Cloud Storage: <span class="status yellow">🟡 60% Used</span></li>
+                        <li>🖥️ Support Infrastructure: <span class="status green">🟢 Stable</span></li>
+                    </ul>
+
+                </div>
+
+                <div id="Security-Fundamentals" class="dashboard-card">
+
+                    <h3><img src="assets/securityF icon.webp" width="25" height="35" id="" /> Security Fundamental</h3>
+
+                    <p>Business Continuity, Policies and risk management readiness.</p>
+
+                    <div class="metric">
+                        <span class="metric-value">92%</span>
+                        <span class="matric-label">Business Continuity Readiness</span>
+                    </div>
+
+                    <ul class="indicators">
+                        <li>📋 Policy Compliance: <span class="status green">🟢 On Track</span></li>
+                        <li>⚠️ Risk Management: <span class="status yellow">🟡 Monitoring</span></li>
+                        <li>🔒 Access Control: <span class="status green">🟢 Secure</span></li>
+                    </ul>
+                </div>
+                <div id="Development-Projects">
+                    <h3>💻 Development & Projects</h3>
+                    <p>Software and game development progress tracking</p>
+                    <canvas id='devProjectsChart' width="300" height="200"></canvas>
+
+                    <ul class="indicators">
+                        <li>🎮 Game Pipeline: <span class="status green">🟢 On Track</span></li>
+                        <li>📱 Mobile Apps: <span class="status yellow">🟡 In Progress</span></li>
+                        <li>🖥️ Websites: <span class="status green">🟢 Stable</span></li>
+                    </ul>
+                </div>
+                <div id="Reports-n-Analytics">
+                    <h3>📈 Reports & Analytics</h3>
+                    <p>Tracking incidents and analytics trends over time.</p>
+
+                    <canvas id="analyticsChart" width="800px" height="400px"></canvas>
+                    <div class="analytics-summary">
+                        <h4>Summary</h4>
+                        <ul class="summaryList">
+                            <li>📊 Peak incidents: <strong>22 (May)</strong></li>
+                            <li>✅ Current month incidents: <strong>49</strong></li>
+                            <li>⬇️ 15% decrease compared to last month</li>
+                        </ul>
+                        <button id="viewBtn">View Full Report</button>
+                    </div>
+
+
+                </div>
+
+                <div id="Threat-Intelligence">
+                    <h3>🕵️ Threat Intelligence</h3>
+                    <p> Monitoring and analyzing cyber threats in real-time.</p>
+
+                    <canvas id="threatChart" width="400" height="300"></canvas>
+
+                    <ul class="threadList">
+                        <li>🟢 Resolved:<b>15</b></li>
+                        <li>🔴 Critical Threats: <b>2</b></li>
+                        <li>🟡 Moderate Threats:<b>10</b></li>
+                    </ul>
+
+                </div>
+
+                <div id="Network-Security">
+                    <h3>🔒 Network Security  </h3>
+                    <p>Firewall, IDS/IPS, and monitoring.</p>
+
+                    <div class="metric">
+                        <span class="metric-value">325</span>
+                        <span class="metric-label">Attacks Blocked Overall</span>
+                    </div>
+
+                    <ul class="indicators">
+                        <li>🛡️ Firewall: <span class="status green">🟢 Active</span></li>
+                        <li>🔗 VPN: <span class="status yellow">🟡 Partial</span></li>
+                        <li>👁️ IDS: <span class="status green">🟢 Monitoring</span></li>
+                    </ul>
+                </div>
+
+
+            </div>
 
 
         </main>
@@ -51,6 +151,7 @@
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js">
 
     </script>

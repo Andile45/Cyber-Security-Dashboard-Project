@@ -5,7 +5,7 @@
 
 .sidebar {
   width: 200px;
-  background-color: #f0f4f8;
+  /* background-color: #f0f4f8; */
   padding: 20px;
   cursor: pointer;
   border: 0px solid;
@@ -24,8 +24,8 @@
 }
 
 .sidebar ul li:hover {
-  background-color: lightgray;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(7, 7, 7);
 }
 
 .sidebar h3 {
@@ -43,17 +43,16 @@
 body {
   padding: 0;
   margin: 0;
-  background-color:lightgray;
+  background-color: lightgray;
 }
 
 #companyLogo {
   padding: 20px;
-
 }
 
 #content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
   padding: 50px;
   justify-content: center;
@@ -71,10 +70,8 @@ body {
 }
 
 #cloud:hover {
-
   transform: translateY(-15px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-
 }
 
 #cloudChart {
@@ -89,7 +86,6 @@ body {
 .cloud-indicators {
   font-family: Arial, Helvetica, sans-serif;
   list-style: none;
-
 }
 
 #cloud {
@@ -100,10 +96,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 #Security-Fundamentals h3 {
   font-size: x-large;
-
 }
 
 .dashboard-card {
@@ -178,7 +172,6 @@ body {
 }
 
 #Development-Projects {
-
   background-color: #f0f4f8;
   border-radius: 15px;
   padding: 20px;
@@ -186,16 +179,11 @@ body {
   font-family: Arial, sans-serif;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-
-
 }
 
 #Development-Projects:hover {
-
   transform: translateY(-15px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-
-
 }
 
 #Reports-n-Analytics {
@@ -207,13 +195,12 @@ body {
   font-family: Arial, sans-serif;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-
 }
-#Reports-n-Analytics:hover{
+#Reports-n-Analytics:hover {
   transform: translateY(-15px);
-   box-shadow: 0 8px 20px  rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-#viewBtn{
+#viewBtn {
   border: 0px solid black;
   padding: 20px;
   border-radius: 10px;
@@ -245,13 +232,33 @@ body {
   transform: translateY(-15px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-.threadList{
+.threadList {
   list-style: none;
 }
-.summaryList{
+.summaryList {
   list-style: none;
 }
-header h3{
-  font-family: 'Courier New', Courier, monospaces;
+header h3 {
+  font-family: "Courier New", Courier, monospaces;
   font-size: xx-large;
+}
+.cloudBtn {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 15px;
+}
+.securityBtn {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 15px;
+  margin-top: 5px;
+}
+.netBtn {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 15px;
+  margin-top: 15px;
 }

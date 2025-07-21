@@ -12,6 +12,19 @@
   border-radius: 19px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    order: 1;
+  }
+  .main-content {
+    order: 2;
+  }
+}
+
 .sidebar ul li {
   list-style: none;
   gap: 10px;
@@ -59,7 +72,12 @@ body {
   text-align: center;
   border: 1px solid black;
 }
-
+@media (max-width: 768px) {
+  #content {
+    gap: 20px;
+    padding: 20px;
+  }
+}
 #cloud {
   /* display: flex; */
   padding: 20px;
@@ -242,6 +260,7 @@ header h3 {
   font-family: "Courier New", Courier, monospaces;
   font-size: xx-large;
 }
+
 .cloudBtn {
   border: 1px solid black;
   border-radius: 10px;
@@ -261,4 +280,20 @@ header h3 {
   font-family: "Courier New", Courier, monospace;
   padding: 15px;
   margin-top: 15px;
+}
+#threatChart {
+  width: 400px;
+  height: 300px;
+}
+#cloudChart {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  header h3 {
+    font-size: large;
+  }
+  #security-Fundamentals h3 {
+    font-size: medium;
+  }
 }
